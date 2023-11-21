@@ -1,0 +1,27 @@
+GET http://localhost:5000/berita
+
+###
+GET http://localhost:5000/berita/2
+
+###
+POST http://localhost:5000/csr
+Content-Type: application/json
+
+{
+    "judul":"Kuntull",
+    "desc":"Kita Kem",
+    "img": "Anjayyy"
+}
+
+###
+PATCH  http://localhost:5000/berita/4
+Content-Type: application/json
+
+{
+    "judul":"Rutamqweqwe",
+    "desc":"Slebew",
+    "img": "Anj"
+}
+
+###
+DELETE   http://localhost:5000/berita/3
