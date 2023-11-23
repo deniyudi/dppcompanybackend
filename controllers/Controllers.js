@@ -90,11 +90,11 @@ export const updateData = async (req, res) => {
   // update berita
   let fileName = "";
   if (req.files === null) {
-    fileName = Data.img;
+    fileName = data.img;
   } //jika files nya kosong brarti cuman ganti title  aja
   else {
-    const desc = req.body.desc;
-    const category = req.body.category;
+    // const desc = req.body.desc;
+    // const category = req.body.category;
     const file = req.files.file;
     const fileSize = file.data.length;
     const ext = path.extname(file.name);
@@ -117,6 +117,7 @@ export const updateData = async (req, res) => {
 
   const name = req.body.judul;
   const desc = req.body.desc;
+  const category = req.body.category;
   const file = req.files.file;
   const ext = path.extname(file.name);
   const fileNameu = file.md5 + ext;
