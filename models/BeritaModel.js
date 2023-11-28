@@ -5,7 +5,7 @@ const {DataTypes} = Sequelize;
 
 const Berita = db.define('upload',{
     judul: DataTypes.STRING,
-    desc : DataTypes.STRING,
+    desc : DataTypes.TEXT,
     category : DataTypes.STRING,
     img : DataTypes.STRING,
     url : DataTypes.STRING,
