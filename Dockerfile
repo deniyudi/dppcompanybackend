@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5001
  
 # Command to start the application
-CMD ["npx", "nodemon", "index" ]
+CMD ["npm", "start"]
